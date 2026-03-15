@@ -3,10 +3,28 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>OceanPlay Privacy Policy</title>
-  <meta name="description" content="OceanPlay privacy policy." />
+  <title>Política de Privacidad | OceanPlay</title>
+  <meta name="description" content="Política de privacidad de OceanPlay." />
   <style>
-    body { font-family: -apple-system, system-ui, Segoe UI, Roboto, Arial; margin: 0; background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%); }
+    :root {
+      --ocean-bg: #0A1F44;
+      --ocean-card: #123B7A;
+      --ocean-menu: #081735;
+      --ocean-accent: #6EC6FF;
+      --ocean-primary: #1DA1F2;
+      --ocean-secondary: #2E4F8F;
+      --ocean-text: #EAF4FF;
+      --ocean-text-muted: rgba(234, 244, 255, 0.72);
+      --ocean-divider: rgba(110, 198, 255, 0.32);
+    }
+
+    body {
+      font-family: -apple-system, system-ui, Segoe UI, Roboto, Arial;
+      margin: 0;
+      background: linear-gradient(145deg, var(--ocean-menu) 0%, var(--ocean-bg) 45%, var(--ocean-secondary) 100%);
+      color: var(--ocean-text);
+      min-height: 100vh;
+    }
     .wrap { max-width: 860px; margin: 0 auto; padding: 32px 18px; }
     .logo {
       display: block;
@@ -14,79 +32,79 @@
       max-width: 200px;
       height: auto;
       border-radius: 28px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12), 0 2px 6px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35), 0 0 0 1px var(--ocean-divider);
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       cursor: pointer;
     }
     .logo:hover {
       transform: scale(1.08) translateY(-4px);
-      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.16), 0 4px 12px rgba(0, 0, 0, 0.12);
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(110, 198, 255, 0.5);
     }
     .card {
-      background: white;
-      border: 1px solid rgba(229, 231, 235, 0.8);
+      background: var(--ocean-card);
+      border: 1px solid var(--ocean-divider);
       border-radius: 16px;
       padding: 24px;
       margin: 16px 0;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
       transition: all 0.2s ease;
     }
     .card:hover {
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
       transform: translateY(-2px);
     }
     h1 { margin: 0 0 8px; font-size: 32px; font-weight: 700; text-align: center; }
     h2 { margin: 0 0 12px; font-size: 20px; font-weight: 600; }
-    p, li { line-height: 1.6; color: #111827; }
-    .muted { color: #6b7280; font-size: 14px; text-align: center; }
-    a { color: #007aff; text-decoration: none; transition: color 0.2s; }
-    a:hover { color: #0051d5; text-decoration: underline; }
+    p, li { line-height: 1.6; color: var(--ocean-text); }
+    .muted { color: var(--ocean-text-muted); font-size: 14px; text-align: center; }
+    a { color: var(--ocean-accent); text-decoration: none; transition: color 0.2s; }
+    a:hover { color: var(--ocean-primary); text-decoration: underline; }
   </style>
 </head>
 <body>
   <div class="wrap">
     <img src="logo.png" alt="OceanPlay Logo" class="logo" />
-    <h1>OceanPlay Privacy Policy</h1>
-    <p class="muted">Last updated: 2026-03-05</p>
+    <h1>Política de Privacidad de OceanPlay</h1>
+    <p class="muted">Última actualización: 2026-03-05</p>
 
     <div class="card">
-      <p><strong>OceanPlay</strong> is a media player application. It does not provide any media content or playlists. Users must provide their own playlists.</p>
+      <p><strong>OceanPlay</strong> es una aplicación reproductora multimedia. No proporciona contenido ni listas de reproducción. Cada usuario debe cargar sus propias playlists.</p>
     </div>
 
     <div class="card">
-      <h2>Data We Collect</h2>
+      <h2>Datos que recopilamos</h2>
       <ul>
-        <li><strong>Account / Playlist details:</strong> If you add a playlist (server, username, password), this information is stored locally on your device to enable playback.</li>
-        <li><strong>Diagnostics (optional):</strong> If enabled by the user or required to troubleshoot, basic logs may be shared with support upon request.</li>
+        <li><strong>Datos de cuenta / playlist:</strong> Si agregas una playlist (servidor, usuario y contraseña), esa información se guarda localmente en tu dispositivo para permitir la reproducción.</li>
+        <li><strong>Diagnóstico (opcional):</strong> Si el usuario lo habilita o si se requiere para soporte, se pueden compartir registros básicos para resolver problemas.</li>
       </ul>
-      <p class="muted">If you do not have analytics/crash reporting yet, this wording keeps it safe.</p>
+      <p class="muted">Si aún no usas analíticas o reporte de fallos, esta redacción mantiene la política alineada.</p>
     </div>
 
     <div class="card">
-      <h2>How We Use Data</h2>
+      <h2>Cómo usamos los datos</h2>
       <ul>
-        <li>To load and play the playlists you provide.</li>
-        <li>To improve app stability and performance.</li>
-        <li>To respond to support requests.</li>
+        <li>Para cargar y reproducir las playlists que proporcionas.</li>
+        <li>Para mejorar la estabilidad y el rendimiento de la app.</li>
+        <li>Para responder solicitudes de soporte.</li>
       </ul>
     </div>
 
     <div class="card">
-      <h2>Data Sharing</h2>
-      <p>We do not sell your personal data. We do not share playlists or credentials with third parties, except when you explicitly send information to support for troubleshooting.</p>
+      <h2>Compartición de datos</h2>
+      <p>No vendemos tus datos personales. No compartimos playlists ni credenciales con terceros, salvo cuando tú envías información explícitamente a soporte para diagnóstico.</p>
     </div>
 
     <div class="card">
-      <h2>Data Storage</h2>
-      <p>Playlist information is stored locally on your Apple TV. You can remove it at any time by deleting the playlist in the app.</p>
+      <h2>Almacenamiento de datos</h2>
+      <p>La información de playlists se almacena localmente en tu Apple TV. Puedes eliminarla en cualquier momento borrando la playlist desde la app.</p>
     </div>
 
     <div class="card">
-      <h2>Contact</h2>
-      <p>If you have privacy questions, contact us at: <a href="mailto:mauro.poblete.c@icloud.com">mauro.poblete.c@icloud.com</a></p>
+      <h2>Contacto</h2>
+      <p>Si tienes dudas sobre privacidad, contáctanos en: <a href="mailto:mauro.poblete.c@icloud.com">mauro.poblete.c@icloud.com</a></p>
     </div>
 
-    <p><a href="/">← Back to Support</a></p>
+    <p><a href="/">← Volver a Soporte</a></p>
     <p class="muted">© 2026 Mauricio Poblete Carrillo</p>
   </div>
 </body>
